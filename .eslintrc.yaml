@@ -1,0 +1,12 @@
+env:
+  browser: true
+extends:
+  - 'prettier'
+  - 'eslint:recommended'
+  - '@nuxtjs/eslint-config-typescript'
+  - 'plugin:prettier/recommended'
+parserOptions:
+  ecmaVersion: latest
+plugins:
+  - vue
+  - '@typescript-eslint'
