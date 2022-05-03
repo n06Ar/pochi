@@ -1,7 +1,13 @@
 {
   // https://v3.nuxtjs.org/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
+  "typeRoots": ["type.d"],
   "types": [
     "@pinia/nuxt"
-  ]
+  ],
+  "compilerOptions": {
+    "paths": {
+      "@types":["type.d"]
+    }
+  }
 }
