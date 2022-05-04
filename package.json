@@ -19,6 +19,7 @@
     "prettier": "^2.6.2"
   },
   "dependencies": {
-    "pinia": "^2.0.13"
+    "pinia": "^2.0.13",
+    "vant": "^3.4.9"
   }
 }

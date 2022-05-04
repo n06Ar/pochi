@@ -1,11 +1,18 @@
-import {defineStore} from "pinia"
+import { defineStore } from 'pinia'
+import { useFetch } from 'nuxt/app'
 
-defineStore('user', {
+export const useCommonStore = defineStore('user', {
   state: () => ({
-    name: 'empty',
-    isLogin: false
+    title: '',
+    userName: 'empty',
+    isLogin: false,
   }),
   actions: {
-
-  }
+    updateTitle(title) {
+      this.title = title
+    },
+    async login() {
+      await useFetch('/api/login')
+    },
+  },
 })
