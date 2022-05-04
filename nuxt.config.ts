@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   buildModules: ['@pinia/nuxt'],
   ssr: true,
   alias: {
-    '@type': path.resolve(__dirname) + 'type.d',
+    '@type': path.resolve(__dirname, 'type.d'),
+    '@store': path.resolve(__dirname, 'store'),
   },
 })
