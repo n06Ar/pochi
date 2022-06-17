@@ -9,4 +9,9 @@ export default defineNuxtConfig({
     '@type': path.resolve(__dirname, 'type.d'),
     '@store': path.resolve(__dirname, 'store'),
   },
+  css: [
+    'primevue/resources/themes/saga-blue/theme.css',
+    'primevue/resources/primevue.css',
+    'primeicons/primeicons.css',
+  ],
 })
